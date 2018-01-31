@@ -4,18 +4,23 @@ title Easy CMD
 :start
 cls
 
+echo  Justin's EasyCMD 1.2
+echo  ---------------------
+echo  CMD made easy
 echo.
-echo *{EasyCMD}* User: %username%
-echo ***************************
+echo  User: %username%
 echo.
-echo [1] Main Menu
-echo [2] Exit
-echo [3] Help
-echo [4] Info
 echo.
-echo ***************************
+echo  Main Screen
+echo  ---------------------
+echo.
+echo  1. Main Menu
+echo  2. Exit
+echo  3. Help
+echo  4. Info
+echo.
 
-set /p choice= What would you like to do?: 
+set /p choice= Input the number of your choice and press Enter: 
 
 if %choice%==1 goto main
 if %choice%==2 goto startexit
@@ -32,21 +37,26 @@ goto start
 :info
 cls
 
+echo  Jular's EasyCMD 1.2
+echo  ---------------------
+echo  CMD made easy
 echo.
-echo {EasyCMD Info} User: %username%
-echo ***************************
+echo  User: %username%
 echo.
-echo Coded by Justin
-echo I did not create the Cleanup Utility!
 echo.
-echo ***************************
+echo  Information
+echo  ---------------------
+echo.
+echo  Coded by Justin
+echo  I did not create the Cleanup Utility!
+echo.
 
 pause
 goto start
 
 :startexit
 echo.
-set /p YN=Are you sure you want to exit? (y/n): 
+set /p YN= Are you sure you want to exit? (y/n): 
 
 if %YN%==y exit
 if %YN%==n goto start
@@ -61,14 +71,19 @@ goto startexit
 :help
 cls
 
+echo  Jular's EasyCMD 1.2
+echo  ---------------------
+echo  CMD made easy
 echo.
-echo {EasyCMD Help} User: %username%
-echo ********************
+echo  User: %username%
 echo.
-echo [1] Type the number of the option and press Enter
-echo [2] Ctrl+C cancels a running command
 echo.
-echo ********************
+echo  Help
+echo  ---------------------
+echo.
+echo  1. Input the number of your choice and press Enter
+echo  2. Ctrl+C cancels a running command
+echo.
 
 pause
 goto start
@@ -76,23 +91,26 @@ goto start
 :main
 cls
 
+echo  Jular's EasyCMD 1.2
+echo  ---------------------
+echo  CMD made easy
 echo.
-echo {Main Menu} User: %username%
-echo ***************************
+echo  User: %username%
 echo.
-echo [1] Networking Commands
-echo [2] Disk Cleanup
-echo [3] Check Disk
-echo [4] System Information
-echo [5] Open Command Prompt
-echo [6] Back
-echo [7] Exit
 echo.
-echo ***************************
+echo  Main Menu
+echo  ---------------------
 echo.
+echo  1. Networking Commands
+echo  2. Disk Cleanup
+echo  3. Check Disk
+echo  4. System Information
+echo  5. Open Command Prompt
+echo  6. Back
+echo  7. Exit
 echo.
 
-set /p choice=What would you like to do?: 
+set /p choice= Input the number of your choice and press Enter: 
 if %choice%==1 goto network
 if %choice%==2 goto clean
 if %choice%==3 goto check
@@ -110,7 +128,7 @@ goto main
 
 :cmd
 echo.
-set /p choice=Are you sure you want to exit EasyCMD and open Command Prompt? (y/n): 
+set /p choice= Are you sure you want to exit EasyCMD and open Command Prompt? (y/n): 
 
 if %choice%==y (cls
 cd C:/
@@ -127,21 +145,25 @@ goto cmd
 :clean
 cls
 
+echo  Jular's EasyCMD 1.2
+echo  ---------------------
+echo  CMD made easy
 echo.
-echo {Disk Cleanup} User: %username%
-echo *************************************
+echo  User: %username%
 echo.
-echo [1] Delete Internet Cookies
-echo [2] Delete Temporary Internet Files
-echo [3] Disk Cleanup
-echo [4] Disk Defragment
-echo [5] Back
-echo [6] Exit
 echo.
-echo *************************************
+echo  Disk Cleanup
+echo  ---------------------
+echo.
+echo  1. Delete Internet Cookies
+echo  2. Delete Temporary Internet Files
+echo  3. Disk Cleanup
+echo  4. Disk Defragment
+echo  5. Back
+echo  6. Exit
 echo.
 
-set /p op=Run: 
+set /p op= Input the number of your choice and press Enter: 
 if %op%==1 goto 1
 if %op%==2 goto 2
 if %op%==3 goto 3
@@ -308,25 +330,30 @@ goto clean
 :network
 cls
 
+echo  Jular's EasyCMD 1.2
+echo  ---------------------
+echo  CMD made easy
 echo.
-echo {Networking Commands} User: %username%
-echo ***************************
+echo  User: %username%
 echo.
-echo [1] test a connection
-echo [2] display network settings currently assigned
-echo [3] display all TCP/IP network configuration values
-echo [4] force a client to give up lease
-echo [5] renew IP address
-echo [6] record route of a connection to its destination
-echo [7] display protocol statistics and current TCP/IP connections
-echo [8] provide info on network latency and loss
-echo [9] display info to diagnose DNS infastructure
-echo [10] Exit
-echo [11] Back
 echo.
-echo ***************************
+echo  Networking Commands
+echo  ---------------------
+echo.
+echo  1. test a connection
+echo  2. display network settings
+echo  3. display all TCP/IP values
+echo  4. force a client to give up lease
+echo  5. renew IP address
+echo  6. record route of connection to its destination
+echo  7. display protocol statistics and TCP/IP connections
+echo  8. network latency and loss stats
+echo  9. diagnose DNS infastructure
+echo  10. Back
+echo  11. Exit
+echo.
 
-set /p choice=What would you like to do?: 
+set /p choice= Input the number of your choice and press Enter: 
 
 if %choice%==1 goto ping
 if %choice%==2 goto ipconfig
@@ -337,8 +364,8 @@ if %choice%==6 goto tracert
 if %choice%==7 goto netstat
 if %choice%==8 goto pathping
 if %choice%==9 goto nslookup
-if %choice%==10 goto netexit
-if %choice%==11 goto main
+if %choice%==10 goto main
+if %choice%==11 goto netexit
 
 echo.
 echo [!] Error. Please enter a valid option.
@@ -349,7 +376,7 @@ goto network
 
 :netexit
 echo.
-set /p YN=Are you sure you want to exit? (y/n): 
+set /p YN= Are you sure you want to exit? (y/n): 
 
 if %YN%==y exit
 if %YN%==n goto network
@@ -363,7 +390,7 @@ goto netexit
 
 :ping
 cls
-set /p pingchoice=What would you like test? (Example: www.cnn.com or 192.168.0.1): 
+set /p pingchoice= What would you like test? (Example: www.cnn.com or 192.168.0.1): 
 cls
 ping %pingchoice%
 echo.
@@ -371,7 +398,7 @@ echo [+] Done
 echo.
 pause
 echo.
-set /p doagain=Would you like to run this command again? (y/n): 
+set /p doagain= Would you like to run this command again? (y/n): 
 if %doagain%==y goto ping
 if %doagain%==n goto network
 
@@ -388,7 +415,7 @@ echo.
 pause
 
 echo.
-set /p doagain=Would you like to run this command again? (y/n): 
+set /p doagain= Would you like to run this command again? (y/n): 
 if %doagain%==y goto ipconfig
 if %doagain%==n goto network
 
@@ -405,7 +432,7 @@ echo.
 pause
 
 echo.
-set /p doagain=Would you like to run this command again? (y/n): 
+set /p doagain= Would you like to run this command again? (y/n): 
 if %doagain%==y goto ipconfig /all
 if %doagain%==n goto network
 
@@ -422,7 +449,7 @@ echo.
 pause
 
 echo.
-set /p doagain=Would you like to run this command again? (y/n): 
+set /p doagain= Would you like to run this command again? (y/n): 
 if %doagain%==y goto ipconfig /release
 if %doagain%==n goto network
 
@@ -439,7 +466,7 @@ echo.
 pause
 
 echo.
-set /p doagain=Would you like to run this command again? (y/n): 
+set /p doagain= Would you like to run this command again? (y/n): 
 if %doagain%==y goto ipconfig /renew
 if %doagain%==n goto network
 
@@ -456,7 +483,7 @@ echo.
 pause
 
 echo.
-set /p doagain=Would you like to run this command again? (y/n): 
+set /p doagain= Would you like to run this command again? (y/n): 
 if %doagain%==y goto Chkdsk
 if %doagain%==n goto check
 
@@ -465,7 +492,7 @@ goto check
 :tracert
 cls
 
-set /p tracertchoice=Enter an IP or WEB address: 
+set /p tracertchoice= Enter an IP or WEB address: 
 tracert %tracertchoice%
 
 echo.
@@ -475,7 +502,7 @@ echo.
 pause
 
 echo.
-set /p doagain=Would you like to run this command again? (y/n): 
+set /p doagain= Would you like to run this command again? (y/n): 
 if %doagain%==y goto tracert
 if %doagain%==n goto network
 
@@ -492,7 +519,7 @@ echo.
 pause
 
 echo.
-set /p doagain=Would you like to run this command again? (y/n): 
+set /p doagain= Would you like to run this command again? (y/n): 
 if %doagain%==y goto netstat
 if %doagain%==n goto network
 
@@ -509,7 +536,7 @@ echo.
 pause
 
 echo.
-set /p doagain=Would you like to run this command again? (y/n): 
+set /p doagain= Would you like to run this command again? (y/n): 
 if %doagain%==y goto systeminfo
 if %doagain%==n goto stuff
 
@@ -526,7 +553,7 @@ echo.
 pause
 
 echo.
-set /p doagain=Would you like to run this command again? (y/n): 
+set /p doagain= Would you like to run this command again? (y/n): 
 if %doagain%==y goto driverquery
 if %doagain%==n goto stuff
 
@@ -535,7 +562,7 @@ goto stuff
 :pathping
 cls
 
-set /p pathpingchoice=What would you like test? (IP or WEB address) 
+set /p pathpingchoice= Enter an IP or web address: 
 pathping %pathpingchoice%
 
 echo.
@@ -545,7 +572,7 @@ echo.
 pause
 
 echo.
-set /p doagain=Would you like to run this command again? (y/n): 
+set /p doagain= Would you like to run this command again? (y/n): 
 if %doagain%==y goto pathping
 if %doagain%==n goto network
 
@@ -562,7 +589,7 @@ echo.
 pause
 
 echo.
-set /p doagain=Would you like to run this command again? (y/n): 
+set /p doagain= Would you like to run this command again? (y/n): 
 if %doagain%==y goto nslookup
 if %doagain%==n goto network
 
@@ -571,19 +598,24 @@ goto network
 :system
 cls
 
+echo  Jular's EasyCMD 1.2
+echo  ---------------------
+echo  CMD made easy
 echo.
-echo {System Information} User: %username%
-echo ***************************
+echo  User: %username%
 echo.
-echo [1] show local and remote MAC addresses
-echo [2] display system hardware/ software info
-echo [3] display all installed drivers
-echo [4] back
-echo [5] exit
 echo.
-echo ***************************
+echo  System Information
+echo  ---------------------
+echo.
+echo  1. show local and remote MAC addresses
+echo  2. display system hardware/ software info
+echo  3. display all installed drivers
+echo  4. back
+echo  5. exit
+echo.
 
-set /p stuffchoice=What would you like to do?: 
+set /p stuffchoice= Input the number of your choice and press Enter: 
 if %stuffchoice%==1 goto getmac
 if %stuffchoice%==2 goto systeminfo
 if %stuffchoice%==3 goto driverquery
@@ -598,7 +630,7 @@ goto system
 
 :systemexit
 echo.
-set /p YN=Are you sure you want to exit? (y/n): 
+set /p YN= Are you sure you want to exit? (y/n): 
 
 if %YN%==y exit
 if %YN%==n goto stuff
@@ -620,7 +652,7 @@ echo.
 pause
 
 echo.
-set /p doagain=Would you like to run this command again? (y/n): 
+set /p doagain= Would you like to run this command again? (y/n): 
 if %doagain%==y goto getmac
 if %doagain%==n goto system
 
@@ -629,17 +661,22 @@ goto system
 :check
 cls
 
+echo  Jular's EasyCMD 1.2
+echo  ---------------------
+echo  CMD made easy
 echo.
-echo {Check Disk} User: %username%
-echo ***************************
+echo  User: %username%
 echo.
-echo [1] verify integrity of disk and check for errors
-echo [2] back
-echo [3] exit
 echo.
-echo ***************************
+echo  Check Disk
+echo  ---------------------
+echo.
+echo  1. verify integrity of disk and check for errors
+echo  2. back
+echo  3. exit
+echo.
 
-set /p checkc=What would you like to do? 
+set /p checkc= Input the number of your choice and press Enter: 
 if %checkc%==1 goto chkdsk
 if %checkc%==2 goto main
 if %checkc%==3 goto checkexit
@@ -653,7 +690,7 @@ goto check
 
 :checkexit
 echo.
-set /p YN=Are you sure you want to exit? (y/n): 
+set /p YN= Are you sure you want to exit? (y/n): 
 
 if %YN%==y exit
 if %YN%==n goto check
@@ -667,7 +704,7 @@ goto checkexit
 
 :exit
 echo.
-set /p YN=Are you sure you want to exit? (y/n): 
+set /p YN= Are you sure you want to exit? (y/n): 
 
 if %YN%==y exit
 if %YN%==n goto main
